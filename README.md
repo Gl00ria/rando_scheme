@@ -6,8 +6,7 @@ random colorscheme either on our favorite editor's startup OR the magic of our
 fingers by hitting a keymap.
 
 ## 📺 Showcase
-
-[rando_vid](https://github.com/Gl00ria/rando_scheme.nvim/assets/random_vid)
+![random_pic](https://github.com/Gl00ria/rando_scheme/blob/main/assets/rando_pic.png)
 
 ## ⚡️ Features
 
@@ -92,6 +91,7 @@ use {
 
 ## ✅ TODO
 
+- [ ] Add a video
 - [ ] Add more options
   - [ ] Allow the user to define hours for (day & night)
     - [ ] Trigger "day_scehemes" on startup according to user's specific hours.
