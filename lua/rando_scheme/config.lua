@@ -22,16 +22,16 @@ local default_config = {
         "ron",
     },
     night_schemes = {
-        "peachpuff",
-        "zellner",
-        "shine",
-        "delek",
-    },
-    day_schemes = {
         "blue",
         "darkblue",
         "default",
         "quiet",
+    },
+    day_schemes = {
+        "peachpuff",
+        "zellner",
+        "shine",
+        "delek",
     },
 }
 return { default_config = default_config }
