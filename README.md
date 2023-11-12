@@ -91,7 +91,6 @@ use {
 
 ## ✅ TODO
 
-- [ ] Add a video
 - [ ] Add more options
   - [ ] Allow the user to define hours for (day & night)
     - [ ] Trigger "day_scehemes" on startup according to user's specific hours.
