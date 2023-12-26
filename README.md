@@ -6,6 +6,7 @@ random colorscheme either on our favorite editor's startup OR the magic of our
 fingers by hitting a keymap.
 
 ## 📺 Showcase
+
 ![random_pic](https://github.com/Gl00ria/rando_scheme/blob/main/assets/rando_pic.png)
 
 ## ⚡️ Features
