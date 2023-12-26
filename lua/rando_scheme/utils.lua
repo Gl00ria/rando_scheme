@@ -13,21 +13,21 @@ function utils.select_random_day_scheme(day_schemes)
     local random_scheme = day_schemes[math.random(1, #day_schemes)]
     clear_and_shine()
     vim.cmd("colorscheme " .. random_scheme)
-    print("Switched colorscheme to: " .. random_scheme)
+    vim.notify("Current colorscheme: " .. random_scheme)
 end
 
 function utils.select_random_night_scheme(night_schemes)
     local random_scheme = night_schemes[math.random(1, #night_schemes)]
     clear_and_shine()
     vim.cmd("colorscheme " .. random_scheme)
-    print("Switched colorscheme to: " .. random_scheme)
+    vim.notify("Current colorscheme: " .. random_scheme)
 end
 
 function utils.select_random_colorscheme(available_schemes)
     local random_scheme = available_schemes[math.random(4, #available_schemes)]
     clear_and_shine()
     vim.cmd("colorscheme " .. random_scheme)
-    print("Switched colorscheme to: " .. random_scheme)
+    vim.notify("Current colorscheme: " .. random_scheme)
 end
 
 function utils.switch_colorscheme(selected, available_schemes)
@@ -39,7 +39,7 @@ function utils.switch_colorscheme(selected, available_schemes)
     else
         clear_and_shine()
         vim.cmd("colorscheme " .. selected)
-        print("Switched colorscheme to: " .. selected)
+        vim.notify("Current colorscheme: " .. selected)
     end
 end
 
@@ -71,4 +71,5 @@ function utils.setup_keymap(default_keymap, startup_schemes, day_schemes, night_
         end)
     end)
 end
+
 return utils
