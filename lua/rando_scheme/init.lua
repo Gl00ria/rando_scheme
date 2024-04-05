@@ -27,10 +27,10 @@ function rando_scheme.setup(opts)
     end
 
     local available_schemes = defaults.startup_schemes
-    -- force adding 'random_all, random_light, random_night' to the table, as a ( 1st, 2nd, 3rd ) entry
-    table.insert(available_schemes, 1, "random_all")
-    table.insert(available_schemes, 2, "random_night")
-    table.insert(available_schemes, 3, "random_day")
+    -- force adding 'Random All, Random Night, Random Day' to the table, as a ( 1st, 2nd, 3rd ) entry
+    table.insert(available_schemes, 1, "Random All")
+    table.insert(available_schemes, 2, "Random Night")
+    table.insert(available_schemes, 3, "Random Day")
 
     -- automatically select a random colorscheme during Neovim startup if 'random_startup = true'
     utils.setup_startup(available_schemes)
