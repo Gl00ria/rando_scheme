@@ -13,33 +13,29 @@ function utils.select_random_day_scheme(day_schemes)
     local random_scheme = day_schemes[math.random(1, #day_schemes)]
     clear_and_shine()
     vim.cmd("colorscheme " .. random_scheme)
-    vim.notify("Current colorscheme: " .. random_scheme)
 end
 
 function utils.select_random_night_scheme(night_schemes)
     local random_scheme = night_schemes[math.random(1, #night_schemes)]
     clear_and_shine()
     vim.cmd("colorscheme " .. random_scheme)
-    vim.notify("Current colorscheme: " .. random_scheme)
 end
 
 function utils.select_random_colorscheme(available_schemes)
     local random_scheme = available_schemes[math.random(4, #available_schemes)]
     clear_and_shine()
     vim.cmd("colorscheme " .. random_scheme)
-    vim.notify("Current colorscheme: " .. random_scheme)
 end
 
 function utils.switch_colorscheme(selected, available_schemes)
     if not selected then
         return
     end
-    if selected == "random_all" then
+    if selected == "Random All" then
         utils.select_random_colorscheme(available_schemes)
     else
         clear_and_shine()
         vim.cmd("colorscheme " .. selected)
-        vim.notify("Current colorscheme: " .. selected)
     end
 end
 
@@ -59,11 +55,11 @@ function utils.setup_keymap(default_keymap, startup_schemes, day_schemes, night_
         vim.ui.select(startup_schemes, {
             prompt = "Select a colorscheme OR random",
         }, function(selected)
-            if selected == "random_all" then
+            if selected == "Random All" then
                 utils.select_random_colorscheme(startup_schemes)
-            elseif selected == "random_day" then
+            elseif selected == "Random Day" then
                 utils.select_random_day_scheme(day_schemes)
-            elseif selected == "random_night" then
+            elseif selected == "Random Night" then
                 utils.select_random_night_scheme(night_schemes)
             else
                 utils.switch_colorscheme(selected, startup_schemes)
